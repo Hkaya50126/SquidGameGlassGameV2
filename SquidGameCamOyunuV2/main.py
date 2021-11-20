@@ -12,18 +12,21 @@ def randomdeger():
         print()
 def tercih(gelensecim,gelendongu):
     if gelendongu==7:
-        print("Tebrikler Oyunu Geçtiniz") exit()
+        print("Tebrikler Oyunu Geçtiniz") 
+        exit()
     else:
         if gelensecim=="l":
             if dizi[gelendongu][0]==1:
                 print("Tebrikler!!! ",gelendongu+1,". aşamayı geçtiniz")
             else:
-                print("ÖLDÜNÜZ!!!") return "dead"
+                print("ÖLDÜNÜZ!!!") 
+                return "dead"
         else:
             if dizi[gelendongu][1]==1:
                 print("Tebrikler!!! ",gelendongu+1,". aşamayı geçtiniz")
             else:
-                print("ÖLDÜNÜZ!!!") return "dead"
+                print("ÖLDÜNÜZ!!!") 
+                return "dead"
 randomdeger()
 for d in range(len(dizi)):
     secim=input("sola atlamak icin l, saga atlamak icin r yaziniz:")
